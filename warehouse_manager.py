@@ -5,12 +5,14 @@ items = {"Name": [" dresses"," jackets", "jeans"],
 }
 print("What would you like to do?")
 if __name__ == "__main__":
-    text = "exit"
-    word = "show"
-    if text:
+    text = input()
+    
+    if text == "exit":
         print("Exiting...Bye!")
         
-    elif word:
+    elif text == "show":
         print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-       
+        break
+    
+        
 
