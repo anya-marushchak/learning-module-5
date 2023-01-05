@@ -15,6 +15,6 @@ if __name__ == "__main__":
         break
 
 def get_items():
-   return dict.get("Name")
-   return dict.get("Quantity")
+   return dict.get([0])
+   return dict.get([1])
 get_items()
