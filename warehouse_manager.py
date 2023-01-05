@@ -14,7 +14,3 @@ if __name__ == "__main__":
         print("Name\tQuantity\tUnit\tUnit Price (PLN)")
         break
 
-def get_items():
-   return dict.get([0])
-   return dict.get([1])
-get_items()
