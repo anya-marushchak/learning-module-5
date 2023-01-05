@@ -10,6 +10,9 @@ if __name__ == "__main__":
     while exit:
         print("Exiting...Bye!")
         break
+    if not exit:
+        print("show")
+        
 def get_items():
     print("Name\tQuantity\tUnit\tUnit Price (PLN)")
 get_items()
