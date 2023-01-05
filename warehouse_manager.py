@@ -12,7 +12,7 @@ if __name__ == "__main__":
         
     elif text == "show":
         print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-        break
+        
     
         
 
