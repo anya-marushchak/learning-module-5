@@ -4,15 +4,19 @@ items = {"Name": [" dresses"," jackets", "jeans"],
 "Unit_Price (PLN)":["100","160","120"]
 }
 print("What would you like to do?")
+
+def get_items():
+    text == "show"
+    print("Name\tQuantity\tUnit\tUnit Price (PLN)")      
+
 if __name__ == "__main__":
     text = input()
     
     if text == "exit":
         print("Exiting...Bye!")
-        
-    elif text == "show":
-        print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-        
+    else:
+        get_items()
+ 
     
         
 
