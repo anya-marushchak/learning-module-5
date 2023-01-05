@@ -12,7 +12,8 @@ if __name__ == "__main__":
         break
     if word:
          print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-
+        break
+    
 def get_items():
    return dict.values
 get_items()
