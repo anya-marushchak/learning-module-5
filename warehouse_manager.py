@@ -7,10 +7,10 @@ print("What would you like to do?")
 if __name__ == "__main__":
     text = "exit"
     word = "show"
-    while text:
+    if text:
         print("Exiting...Bye!")
-        break
-    while word:
+        
+    elif word:
         print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-        break
+       
 
