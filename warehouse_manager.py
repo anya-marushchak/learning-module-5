@@ -7,7 +7,7 @@ print("What would you like to do?")
 if __name__ == "__main__":
     text = "exit"
     word = "show"
-    while exit:
+    while text:
         print("Exiting...Bye!")
         break
     while word:
