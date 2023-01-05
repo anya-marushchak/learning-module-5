@@ -5,7 +5,7 @@ items = {"Name": [" dresses"," jackets", "jeans"],
 }
 print("What would you like to do?")
 if __name__ == "__main__":
-    text = input()
+    text = "exit"
     word = "show"
     while exit:
         print("Exiting...Bye!")
@@ -15,5 +15,6 @@ if __name__ == "__main__":
         break
 
 def get_items():
-   return dict.values
+   return dict.get("Name")
+   return dict.get("Quantity")
 get_items()
