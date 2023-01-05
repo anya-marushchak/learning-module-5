@@ -10,7 +10,7 @@ if __name__ == "__main__":
     while exit:
         print("Exiting...Bye!")
         break
-    if word:
+    while word:
         print("Name\tQuantity\tUnit\tUnit Price (PLN)")
         break
 
