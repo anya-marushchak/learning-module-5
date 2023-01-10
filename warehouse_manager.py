@@ -11,16 +11,14 @@ def get_items():
     print("Name\tQuantity\tUnit\tUnit Price (PLN)")      
     print("dresses\t5       \tpcs     \t110")
     print("jackets\t4       \tpcs     \t160")
-    print("jeans\t7         \tpcs    \t120" )
+    print("jeans\t7         \tpcs      \t120" )
 
 if __name__ == "__main__":
     text = input()
     
-    if text == "exit":
+    while text == "exit":
         print("Exiting...Bye!")
+        break
     else:
         get_items()
- 
-    
         
-
