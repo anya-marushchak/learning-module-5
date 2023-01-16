@@ -1,3 +1,6 @@
+import csv
+
+
 items = [{'Name': 'dress', 'Quantity':'5','Unit':'pcs','Unit_price (PLN)':'120'},
     {'Name': 'jacket', 'Quantity':'7','Unit':'pcs','Unit_price (PLN)':'150'},
     {'Name': 'short', 'Quantity':'9','Unit':'pcs','Unit_price (PLN)':'50'},
@@ -9,9 +12,9 @@ sold_items = []
 
 def get_items():
     print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-    print("_"*4 + "   " + "_" * 8 + "         " + "_" * 4 +"   " + "_" * 15 )
+    print("_"*4 + "    " + "_" * 8 + "         " + "_" * 4 +"   " + "_" * 15 )
     for j in range (0, len(items)):
-        print(f"{items[j]['Name']}\t{items[j]['Quantity']}  \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
+        print(f"{items[j]['Name']}\t   {items[j]['Quantity']}    \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
 
 
 def add_item(name,quantity,unit,unit_price):
@@ -22,7 +25,7 @@ def sell_item(name_sell, quantity_sell):
     print(f"Successfully sold {quantity_sell} {name_sell}")
     for j in range (0,len(items)):
         if name_sell == items[j]['Name']:
-            items[j]['Quantity'] = items[j]['Quantity']-quantity_sell
+            items[j]['Quantity'] = int(items[j]['Quantity'])-quantity_sell
             sold_items.append({'Name':name_sell, 'Quantity':quantity_sell, 'Unit':items[j]['Unit'], 'Unit_price (PLN)': items[j]['Unit_price (PLN)']})
 
 
