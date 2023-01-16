@@ -14,7 +14,7 @@ def get_items():
         print(f"{items[j]['Name']}\t   {items[j]['Quantity']}    \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
 
 
-def add_item(name,quantity,init,unit_price):
+def add_item(name,quantity,unit,unit_price):
     items.append({'Name':name, 'Quantity':quantity,'Unit':unit, 'Unit_price (PLN)': unit_price})
 
 
@@ -73,8 +73,6 @@ def load_items_from_csv():
 if __name__ == "__main__":
     while True:
         action = input ("What would you like to do?")
-        if action == "exit":
-            print("Exiting...Bye!")
         if action == "show":
             get_items()
         if action == "add":
@@ -100,3 +98,6 @@ if __name__ == "__main__":
         if action == "load":
             load_items_from_csv()
             print("Successfully loaded data from magazyn.csv")
+        if action == "exit":
+            print("Exiting...Bye!")
+            break    
