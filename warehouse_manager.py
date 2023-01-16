@@ -100,10 +100,3 @@ if __name__ == "__main__":
         if action == "load":
             load_items_from_csv()
             print("Successfully loaded data from magazyn.csv")
-
-
-
-
-        
-       
-        
