@@ -11,7 +11,7 @@ def get_items():
     print("Name\tQuantity\tUnit\tUnit Price (PLN)")
     print("_"*4 + "   " + "_" * 8 + "         " + "_" * 4 +"   " + "_" * 15 )
     for j in range (0, len(items)):
-        print(f"{items[j]['Name']}\t   {items[j]['Quantity']}    \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
+        print(f"{items[j]['Name']}\t{items[j]['Quantity']}  \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
 
 
 def add_item(name,quantity,unit,unit_price):
@@ -79,7 +79,7 @@ if __name__ == "__main__":
             name = input("Adding to warehouse\n Item name:")
             quantity = int(input("Item quantity:"))
             unit = input("Item unit:")
-            unit_price = float(input("Item unit_price:"))
+            unit_price = int(input("Item unit_price:"))
             print("Successfully added to warehouse.Current status:")
             add_item(name, quantity,unit,unit_price)
             get_items()
