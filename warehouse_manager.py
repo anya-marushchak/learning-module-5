@@ -50,7 +50,7 @@ def export_items_to_csv():
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader() 
         for j in range (0,len(items)):
-            writer.writerow({'Name': item[j]['Name'],'Quantity':items[j]['Quantity'],'Unit':items[j]['Unit'],'Unit_price (PLN)' : ítems[j]['Unit_price (PLN)']})
+            writer.writerow({'Name': items[j]['Name'],'Quantity':items[j]['Quantity'],'Unit':items[j]['Unit'],'Unit_price (PLN)' : items[j]['Unit_price (PLN)']})
 
 
 def export_sales_to_csv():
@@ -59,14 +59,14 @@ def export_sales_to_csv():
         writer = csv.DictWriter(csvfile,fieldnames=fieldnames)
         writer.writeheader()
         for j in range (0, len(sold_items)):
-            writer.writerow({'Name': item[j]['Name'],'Quantity':items[j]['Quantity'],'Unit':items[j]['Unit'],'Unit_price (PLN)' : ítems[j]['Unit_price (PLN)']})
+            writer.writerow({'Name': items[j]['Name'],'Quantity':items[j]['Quantity'],'Unit':items[j]['Unit'],'Unit_price (PLN)' : items[j]['Unit_price (PLN)']})
 
 def load_items_from_csv():
     items.clear()
     with open('magazyn.csv',newline='') as csvfile:
-        reader = scv.DictReader(csvfile)
+        reader = csv.DictReader(csvfile)
         for row in reader:
-            print(row['Name'], row['Quantity'], row['Unit'], row ['Unit_price' (PLN)])
+            print(row['Name'], row['Quantity'], row['Unit'], row ['Unit_price (PLN)'])
             items.append({'Name': row['Name'], 'Quantity':int(row['Quantity']), 'Unit': row['Unit'], 'Unit_price (PLN)': float(row['Unit_price (PLN)']) })
 
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
         if action == "save":
             export_items_to_csv()
             print("Successfully exported data to magazyn.csv")
-            export_sales_to_scv()
+            export_items_to_csv()
             print("Successfully exported data to magazyn_sales.csv")
         if action == "load":
             load_items_from_csv()
