@@ -12,7 +12,7 @@ sold_items = []
 
 def get_items():
     print("Name\tQuantity\tUnit\tUnit Price (PLN)")
-    print("_"*4 + "    " + "_" * 8 + "         " + "_" * 4 +"   " + "_" * 15 )
+    print("----\t--------\t----\t----------")
     for j in range (0, len(items)):
         print(f"{items[j]['Name']}\t   {items[j]['Quantity']}    \t {items[j]['Unit']}  \t  {items[j]['Unit_price (PLN)']}")
 
