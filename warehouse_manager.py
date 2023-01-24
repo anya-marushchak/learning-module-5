@@ -102,5 +102,5 @@ if __name__ == "__main__":
             load_items_from_csv()
             print("Successfully loaded data from magazyn.csv")
         if action == "exit":
-            print("Exiting...Bye!")
-            break    
+            print("Exitifghtyung...Bye!")
+            exit()    
